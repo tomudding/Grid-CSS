@@ -132,35 +132,73 @@ b, strong {
     font-weight: 200;
     padding: 0.625rem 2.1875rem;
     text-align: center;
-    -webkit-transition: filter 0.5s ease, color 0.5s ease;
-    -moz-transition: filter 0.5s ease, color 0.5s ease;
-    -ms-transition: filter 0.5s ease, color 0.5s ease;
-    -o-transition: filter 0.5s ease, color 0.5s ease;
-    transition: filter 0.5s ease, color 0.5s ease;
+    -webkit-transition: filter 0.5s ease, background-color 0.5s ease;
+    -moz-transition: filter 0.5s ease, background-color 0.5s ease;
+    -ms-transition: filter 0.5s ease, background-color 0.5s ease;
+    -o-transition: filter 0.5s ease, background-color 0.5s ease;
+    transition: filter 0.5s ease, background-color 0.5s ease;
 }
 
-.button[class*="alert-"] {
-    color: #FFFFFF;
+.button:not(:disabled):not(.disabled) {
+    cursor: pointer;
 }
 
-.button:hover {
+.button:disabled,
+.button.disabled {
+    filter: brightness(75%);
+    cursor: not-allowed;
+}
+
+.button:not(:disabled):not(.disabled):hover {
     filter: brightness(85%);
 }
 
-.button.alert-danger {
+.button.alert-danger,
+.button.alert-danger[class*="button-outline"]:hover {
     background-color: rgb(221, 75, 57);
+    border-color: rgb(221, 75, 57);
 }
 
-.button.alert-info {
+.button.alert-info,
+.button.alert-info[class*="button-outline"]:hover {
     background-color: rgb(56, 149, 204);
+    border-color: rgb(56, 149, 204);
 }
 
-.button.alert-success {
+.button.alert-success,
+.button.alert-success[class*="button-outline"]:hover {
     background-color: rgb(49, 205, 42);
+    border-color: rgb(49, 205, 42);
 }
 
-.button.alert-warning {
+.button.alert-warning,
+.button.alert-warning[class*="button-outline"]:hover {
     background-color: rgb(241, 113, 5);
+    border-color: rgb(241, 113, 5);
+}
+
+.button[class*="alert-"],
+.button[class*="alert-"]:hover {
+    color: #FFFFFF;
+}
+
+.button[class*="alert-"][class*="button-outline"]:hover {
+    filter: brightness(100%);
+}
+
+.button[class*="button-outline"] {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.button.button-primary {
+    background-color: rgb(49, 167, 237);
+    color: #FFFFFF;
+}
+
+.button.button-secondary {
+    background-color: rgb(100, 111, 118);
+    color: #FFFFFF;
 }
 
 .card-container {
@@ -819,29 +857,6 @@ input {
     border-radius: 0.25rem;
     text-indent: 0.5rem;
     line-height: 1;
-}
-
-input[type="submit"] {
-    background-color: rgb(246, 90, 91);
-    color: #FFFFFF;
-    cursor: pointer;
-    -webkit-transition: background-color 0.5s ease;
-    -moz-transition: background-color 0.5s ease;
-    -ms-transition: background-color 0.5s ease;
-    -o-transition: background-color 0.5s ease;
-    transition: background-color 0.5s ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-input[type="submit"].transparent {
-    background-color: rgb(172, 63, 64);
-}
-
-input[type="submit"]:hover,
-input[type="submit"]:active {
-    background-color: rgb(225, 82, 83);
 }
 
 mark {

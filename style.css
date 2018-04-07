@@ -618,9 +618,15 @@ header .navigation-container .navigation-links > ul > li > ul > li a {
 header .navigation-container .navigation-links ul li a.active,
 header .navigation-container .navigation-links ul li:hover > a,
 header .navigation-container .navigation-links ul li:active label.navigation-dropdown-toggle,
-header .navigation-container .navigation-links ul li:hover label.navigation-dropdown-toggle {
+header .navigation-container .navigation-links ul li:hover label.navigation-dropdown-toggle,
+header .navigation-container .navigation-links ul li:hover label.navigation-dropdown-toggle a {
     color: rgb(34, 116, 165);
     text-decoration: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+    transition: none;
 }
 
 header .navigation-container .navigation-icon {
@@ -754,10 +760,6 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
 
     header .navigation-container .navigation-links > ul > li > ul > li {
     	background-color: #EBEBEB;
-    }
-
-    header .navigation-container .navigation-links > ul > li > ul > li > a {
-        text-indent: 2rem;
     }
 
     header .navigation-container .navigation-logo a,

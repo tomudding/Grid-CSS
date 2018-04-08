@@ -102,7 +102,8 @@ b, strong {
     animation: fadein 1.5s;
 }
 
-.navigation-wrapper + .body-wrapper > .banner-wrapper .banner-title {
+.navigation-wrapper + .body-wrapper > .banner-wrapper .banner-title,
+.navigation-wrapper + .banner-wrapper .banner-title {
     top: calc(50% + 0.875rem);
 }
 

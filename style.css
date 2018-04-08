@@ -458,6 +458,10 @@ b, strong {
     margin-top: 4.5rem;
 }
 
+.banner-wrapper ~ .container {
+    margin-top: 1rem;
+}
+
 del, s {
     text-decoration: line-through;
 }

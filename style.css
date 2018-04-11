@@ -927,8 +927,6 @@ input[type="radio"]:disabled + label::before {
     background-color: rgb(242, 242, 242);
 }
 
-/*******/
-
 .loader.bar {
     position: relative;
     height: 0.25rem;

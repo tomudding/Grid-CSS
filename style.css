@@ -470,6 +470,31 @@ em, i {
     font-style: italic;
 }
 
+footer {
+    color: #FFFFFF;
+    background-color: rgb(34, 116, 165);
+}
+
+footer .footer-copyright {
+    font-size: 0.875em;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer .footer-copyright a {
+    color: #FFFFFF;
+    border: 0;
+}
+
+footer .container {
+    margin: 1.5rem auto;
+}
+
+footer .footer-copyright .container {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 form {
     padding: 1rem 1rem 0 1rem;
 }
@@ -483,27 +508,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.25em;
+    font-size: 2.25em;
 }
 
 h2 {
-  font-size: 1.875em;
+    font-size: 1.875em;
 }
 
 h3 {
-  font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 h4 {
-  font-size: 1.125em;
+    font-size: 1.125em;
 }
 
 h5 {
-  font-size: 0.875em;
+    font-size: 0.875em;
 }
 
 h6 {
-  font-size: 0.75em;
+    font-size: 0.75em;
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
@@ -570,7 +595,6 @@ header .navigation-container .navigation-logo a span.navigation-logo-full {
 header .navigation-container .navigation-links {
     display: inline-block;
     max-height: 4rem;
-    transition: max-height 0.3s ease-out;
     position: relative;
     margin-left: -3.875rem;
 }
@@ -665,6 +689,10 @@ header .navigation-container .navigation-icon .navicon:after {
     display: block;
     height: 100%;
     position: absolute;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
     width: 100%;
 }
@@ -683,6 +711,10 @@ header .navigation-container .navigation-button {
 
 header .navigation-container .navigation-button:checked ~ .navigation-links {
     max-height: calc(100vh - 4.0625rem);
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
+    -ms-transition: max-height 1s ease-out;
+    -o-transition: max-height 1s ease-out;
     transition: max-height 1s ease-out;
     overflow: scroll;
 }
@@ -708,6 +740,14 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
     header .navigation-container .navigation-row {
         padding: 0;
         text-align: unset;
+    }
+
+    header .navigation-container .navigation-button:not(:checked) ~ .navigation-links {
+        -webkit-transition: max-height 0.3s ease-out;
+        -moz-transition: max-height 0.3s ease-out;
+        -ms-transition: max-height 0.3s ease-out;
+        -o-transition: max-height 0.3s ease-out;
+        transition: max-height 0.3s ease-out;
     }
 
     header .navigation-container .navigation-links {

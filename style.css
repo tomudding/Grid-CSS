@@ -18,13 +18,13 @@ aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu,
 
 html {
     position: relative;
-    background-color: #FFFFFF;
+    background-color: rgb(255, 255, 255);
     height: 100%;
 }
 
 body {
-    background-color: #F6F6F6;
-    color: #333333;
+    background-color: rgb(246, 246, 246);
+    color: rgb(51, 51, 51);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     font-size: 1em;
     font-weight: 400;
@@ -32,13 +32,13 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.004);
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
 
 a, a:visited {
-    color: #386FA4;
+    color: rgb(56, 111, 164);
     text-decoration: none;
     outline: 0;
     border-bottom: solid 0.0625rem;
@@ -51,8 +51,8 @@ a, a:visited {
 
 a:active,
 a:hover {
-    color: #002E55;
-    border-color: #002E55;
+    color: rgb(0, 46, 85);
+    border-color: rgb(0, 46, 85);
 }
 
 b, strong {
@@ -108,14 +108,14 @@ b, strong {
 }
 
 .banner-title h1 {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     font-weight: 600;
 }
 
 .banner-title p {
     max-width: 30rem;
     margin: auto;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 
 .banner-wrapper {
@@ -184,7 +184,7 @@ b, strong {
 
 .button[class*="alert-"],
 .button[class*="alert-"]:hover {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 
 .button[class*="alert-"][class*="button-outline"]:hover {
@@ -192,22 +192,22 @@ b, strong {
 }
 
 .button[class*="button-outline"] {
-    background-color: #FFFFFF;
-    color: #333333;
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
 }
 
 .button.button-primary {
     background-color: rgb(49, 167, 237);
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 
 .button.button-secondary {
     background-color: rgb(100, 111, 118);
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 
 .card-container {
-    background-color: #FFFFFF;
+    background-color: rgb(255, 255, 255);
     border-radius: 0.125rem;
     min-height: 1.875rem;
     box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.05);
@@ -251,7 +251,7 @@ b, strong {
 }
 
 .card-container[class*="alert-"] > .card-header {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
 }
 
 .card-container.small > .card-image img {
@@ -283,14 +283,14 @@ b, strong {
 
 .card-container > .card-actions a,
 .card-container > .card-actions a:visited {
-    color: #386FA4;
-    border-color: #386FA4;
+    color: rgb(56, 111, 164);
+    border-color: rgb(56, 111, 164);
 }
 
 .card-container > .card-actions a:active,
 .card-container > .card-actions a:hover {
-    color: #002E55;
-    border-color: #002E55;
+    color: rgb(0, 46, 85);
+    border-color: rgb(0, 46, 85);
 }
 
 .card-action {
@@ -302,7 +302,7 @@ b, strong {
     display: inline-block;
     cursor: pointer;
     line-height: 1rem;
-    color: #333333;
+    color: rgb(51, 51, 51);
     border: 0;
     background-color: transparent;
 }
@@ -314,16 +314,16 @@ b, strong {
 
 .card-action--favourite:hover .card-action--button,
 .card-action--favourite .card-action--buttonUndo {
-    color: #CA3830;
+    color: rgb(202, 56, 48);
 }
 
 .card-action--reply:hover .card-action--button {
-    color: #265DA0;
+    color: rgb(38, 93, 160);
 }
 
 .card-action--repost:hover .card-action--button,
 .card-action--repost .card-action--buttonUndo {
-    color: #26A02C;
+    color: rgb(38, 160, 44);
 }
 
 .card-action--favourite .card-action--buttonUndo,
@@ -378,7 +378,7 @@ b, strong {
     margin-left: 0.5rem;
     margin-top: 0.375rem;
     font-size: 0;
-    color: #444444;
+    color: rgb(68, 68, 68);
 }
 
 .card-author .card-author--fullname {
@@ -403,7 +403,7 @@ b, strong {
 }
 
 .card-details span.card-time {
-    color: #666666;
+    color: rgb(102, 102, 102);
     float: right;
     font-size: 0.75rem;
 }
@@ -442,7 +442,7 @@ b, strong {
 }
 
 .card-image .card-title {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -471,13 +471,13 @@ em, i {
 }
 
 footer {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     background-color: rgb(34, 116, 165);
 }
 
 footer a,
 footer a:visited {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     border-color: transparent;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -488,7 +488,7 @@ footer a:visited {
 
 footer a:hover,
 footer a:active {
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     border-bottom: solid 0.0625rem;
 }
 
@@ -545,12 +545,12 @@ h6 {
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     font-weight: normal;
-    color: #777777;
+    color: rgb(119, 119, 119);
     font-size: 65%;
 }
 
 header {
-    background-color: #FFFFFF;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
     position: fixed;
     left: 0;
@@ -624,19 +624,19 @@ header .navigation-container .navigation-links > ul > li {
 
 header .navigation-container .navigation-links > ul > li:hover > ul {
 	display: block;
-	background-color: #FFFFFF;
+	background-color: rgb(255, 255, 255);
 }
 
 header .navigation-container .navigation-links > ul > li > a,
 header .navigation-container .navigation-links > ul > li > label {
     display: block;
     padding: 1rem 0.25rem;
-    color: #555555;
+    color: rgb(85, 85, 85);
     border: 0;
 }
 
 header .navigation-container .navigation-links > ul > li > label > a {
-    color: #555555;
+    color: rgb(85, 85, 85);
     border: 0;
 }
 
@@ -656,7 +656,7 @@ header .navigation-container .navigation-links > ul > li > ul > li {
 header .navigation-container .navigation-links > ul > li > ul > li a {
     display: block;
     padding: 0.25rem 1rem;
-    color: #555555;
+    color: rgb(85, 85, 85);
     border: 0;
 }
 
@@ -687,7 +687,7 @@ header .navigation-container .navigation-icon {
 }
 
 header .navigation-container .navigation-icon .navicon {
-    background: #333333;
+    background: rgb(51, 51, 51);
     display: block;
     height: 0.1875rem;
     position: relative;
@@ -696,7 +696,7 @@ header .navigation-container .navigation-icon .navicon {
 
 header .navigation-container .navigation-icon .navicon:before,
 header .navigation-container .navigation-icon .navicon:after {
-    background: #333333;
+    background: rgb(51, 51, 51);
     content: '';
     display: block;
     height: 100%;
@@ -795,7 +795,7 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
         padding: 0.5rem 0.25rem 0.5rem 0.25rem;
         cursor: pointer;
         line-height: 2rem;
-        color: #555555;
+        color: rgb(85, 85, 85);
     }
 
     header .navigation-container .navigation-links > ul > li > label.navigation-dropdown-toggle:after {
@@ -808,7 +808,7 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
 	}
 
     header .navigation-container .navigation-links > ul > li:nth-child(odd) {
-        background-color: #F8F8F8;
+        background-color: rgb(248, 248, 248);
     }
 
     header .navigation-container .navigation-links > ul > li > ul {
@@ -820,7 +820,7 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
     }
 
     header .navigation-container .navigation-links > ul > li > ul > li {
-    	background-color: #EBEBEB;
+    	background-color: rgb(235, 235, 235);
     }
 
     header .navigation-container .navigation-logo a,
@@ -1020,7 +1020,7 @@ input[type="radio"]:disabled + label::before {
 }
 
 mark {
-    background-color: #FFFF99;
+    background-color: rgb(255, 255, 153);
 }
 
 select {
@@ -1037,6 +1037,60 @@ select {
     text-indent: 0.5rem;
     line-height: 1;
     cursor: pointer;
+}
+
+.team-member,
+.team-member-details {
+    width: 100%;
+    display: inline-block;
+    max-width: 100%;
+    height: 3.125rem;
+    border: none;
+}
+
+.team-member .team-member--avatar {
+    float: left;
+}
+
+.team-member img.team-member--avatar {
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 50%;
+}
+
+.team-member .team-member-group {
+    display: inline-block;
+    max-width: 100%;
+    height: 3.125rem;
+    margin-left: 0.5rem;
+    font-size: 0;
+    color: rgb(68, 68, 68);
+}
+
+.team-member .team-member--fullname {
+    font-size: 1rem;
+    line-height: 0.6875rem;
+    height: 33.333333333%;
+}
+
+.team-member:hover .team-member--fullname {
+    text-decoration: underline;
+}
+
+.team-member .team-member--location,
+.team-member .team-member--position {
+    font-size: 0.8125rem;
+    line-height: 0.8125rem;
+    height: 33.333333333%;
+}
+
+.team-member .team-member--fullname,
+.team-member .team-member--location,
+.team-member .team-member--position {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
 }
 
 textarea:focus + #status-overlay {

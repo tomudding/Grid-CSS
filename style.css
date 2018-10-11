@@ -1039,6 +1039,10 @@ select {
     cursor: pointer;
 }
 
+.team-container {
+    margin-bottom: -1.5rem;
+}
+
 .team-member,
 .team-member-details {
     width: 100%;

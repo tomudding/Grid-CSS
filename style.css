@@ -903,6 +903,11 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
     opacity: 1;
 }
 
+hr {
+    background-color: rgb(34, 116, 165);
+    border: 0.0625rem solid rgb(34, 116, 165);
+}
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -1046,7 +1051,6 @@ select {
 .team-member-details {
     width: 100%;
     display: inline-block;
-    max-width: 100%;
     height: 3.125rem;
     border: none;
 }
@@ -1063,7 +1067,7 @@ select {
 
 .team-member .team-member-group {
     display: inline-block;
-    max-width: 100%;
+    max-width: calc(100% - 3.625rem);
     height: 3.125rem;
     margin-left: 0.5rem;
     font-size: 0;

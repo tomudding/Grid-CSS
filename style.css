@@ -356,7 +356,7 @@ b, strong {
 .card-author {
     width: 100%;
     display: inline-block;
-    max-width: calc(100% - 4.125rem);
+    max-width: calc(100% - 5.125rem);
     height: 3.125rem;
     border: none;
 }
@@ -802,8 +802,8 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
     }
 
     header .navigation-container .navigation-links > ul > li > input.navigation-dropdown-button:checked + ul {
-		display: block;
-		position: static;
+        display: block;
+        position: static;
 	}
 
     header .navigation-container .navigation-links > ul > li:nth-child(odd) {
@@ -819,7 +819,7 @@ header .navigation-container .navigation-button:checked ~ .navigation-icon .navi
     }
 
     header .navigation-container .navigation-links > ul > li > ul > li {
-    	background-color: rgb(235, 235, 235);
+        background-color: rgb(235, 235, 235);
     }
 
     header .navigation-container .navigation-logo a,
